@@ -1,4 +1,4 @@
-benchmark "baseline_aws_account" {
+benchmark "aws_baseline_account" {
   title         = "Account"
   description = "Account checks"
   children = [

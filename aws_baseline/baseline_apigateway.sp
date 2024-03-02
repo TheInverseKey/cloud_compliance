@@ -1,4 +1,4 @@
-benchmark_aws_apigateway" {
+benchmark "aws_baseline_apigateway" {
   title         = "API Gateway"
   children = [
     aws_compliance.control.foundational_security_apigateway_1,

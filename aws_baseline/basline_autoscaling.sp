@@ -1,4 +1,4 @@
-benchmark "baseline_aws_autoscaling" {
+benchmark "aws_baseline_autoscaling" {
   title         = "Auto Scaling"
   children = [
     aws_compliance.control.foundational_security_autoscaling_1,

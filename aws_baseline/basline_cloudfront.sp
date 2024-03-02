@@ -1,4 +1,4 @@
-benchmark "baseline_aws_cloudfront" {
+benchmark "aws_baseline_cloudfront" {
   title         = "CloudFront"
   children = [
     aws_compliance.control.foundational_security_cloudfront_1,
