@@ -13,6 +13,10 @@ benchmark "aws_baseline" {
     benchmark.aws_baseline_cloudwatch,
     benchmark.aws_baseline_codebuild,
     benchmark.aws_baseline_config,
-    benchmark.aws_baseline_dms
+    benchmark.aws_baseline_dms,
+    benchmark.aws_baseline_dynamodb,
+    benchmark.aws_baseline_ec2,
+    benchmark.aws_baseline_ecr,
+    benchmark.aws_baseline_ecs
   ]
 }
