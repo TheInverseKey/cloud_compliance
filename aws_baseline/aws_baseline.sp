@@ -8,6 +8,11 @@ benchmark "aws_baseline" {
     benchmark.aws_baseline_apigateway,
     benchmark.aws_baseline_autoscaling,
     benchmark.aws_baseline_cloudformation,
-    benchmark.aws_baseline_cloudfront
+    benchmark.aws_baseline_cloudfront,
+    benchmark.aws_baseline_cloudtrail,
+    benchmark.aws_baseline_cloudwatch,
+    benchmark.aws_baseline_codebuild,
+    benchmark.aws_baseline_config,
+    benchmark.aws_baseline_dms
   ]
 }
