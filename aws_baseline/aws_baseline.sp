@@ -17,6 +17,9 @@ benchmark "aws_baseline" {
     benchmark.aws_baseline_dynamodb,
     benchmark.aws_baseline_ec2,
     benchmark.aws_baseline_ecr,
-    benchmark.aws_baseline_ecs
+    benchmark.aws_baseline_ecs,
+    benchmark.aws_baseline_efs,
+    benchmark.aws_baseline_eks,
+    benchmark.aws_baseline_elasticache
   ]
 }
