@@ -20,6 +20,7 @@ benchmark "aws_baseline" {
     benchmark.aws_baseline_ecs,
     benchmark.aws_baseline_efs,
     benchmark.aws_baseline_eks,
-    benchmark.aws_baseline_elasticache
+    benchmark.aws_baseline_elasticache,
+    benchmark.aws_baseline_elasticbeanstalk
   ]
 }
