@@ -9,25 +9,34 @@ mod "cloud_compliance" {
 
   require {
     plugin "aws" {
-      min_version = "0.132.0"
+      min_version = "0.133.0"
     }
-    plugin "azure" {
+    mod "github.com/turbot/steampipe-mod-aws-compliance" {
+      version = "latest"
+    }
+	mod "github.com/turbot/steampipe-mod-aws-insights" {
+      version = "latest"
+    }
+	 plugin "azure" {
       min_version = "0.54.0"
     }
     plugin "azuread" {
       min_version = "0.15.0"
     }
+	mod "github.com/turbot/steampipe-mod-azure-compliance" {
+      version = "latest"
+    }
+	mod "github.com/turbot/steampipe-mod-azure-insights" {
+      version = "latest"
+    }
     plugin "gcp" {
       min_version = "0.49.0"
     }
-    mod "github.com/turbot/steampipe-mod-aws-compliance" {
-      version = "*"
-    }
-    mod "github.com/turbot/steampipe-mod-azure-compliance" {
-      version = "*"
-    }
-    mod "github.com/turbot/steampipe-mod-azure-compliance" {
-      version = "*"
+    mod "github.com/turbot/steampipe-mod-gcp-compliance" {
+      version = "latest"
+	}
+	mod "github.com/turbot/steampipe-mod-gcp-insights" {
+      version = "latest"
     }
   }
 }
