@@ -1,6 +1,5 @@
 # Steamy Cloud Compliance
 
-
 Are you tired of installing all the Steampipe/Powerpipe mods every time? Well, Steamy Cloud Compliance takes care of all of this.
 
 FYI: This repo was designed for Ubuntu WSL2
@@ -33,7 +32,9 @@ apt-get update && \
 
 ## Installation 
 
-On WSL2 or Linux run the following:
+1. Install your cloud CLI above.
+2. Authenticate to the cloud account you want to run the Steamy Cloud Compliance against.
+3. Install Steamy Cloud Compliance via the commands below.
 
 ```
 git clone https://github.com/TheInverseKey/cloud_compliance
@@ -41,3 +42,9 @@ cd cloud_compliance
 chmod +x ./install.sh
 ./install.sh
 ```
+4. In a browser on the host machine navigate to the following URL: http://localhost:9194
+5. Select the dashboard you want to run against the cloud environment(You can sort the dashboards by mod).
+
+For more information about running your dashboards with different outputs or headless see the following documentation from Steampipe: 
+https://hub.steampipe.io/
+https://hub.powerpipe.io/
