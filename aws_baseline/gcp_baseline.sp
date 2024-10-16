@@ -3,5 +3,5 @@ benchmark "gcp_baseline" {
   description   = "GCP Baseline"
   
   children = [
-    gcp_compliance.benchmark.cis_
+    gcp_compliance.benchmark.cis_v300
 }
