@@ -4,4 +4,5 @@ benchmark "gcp_baseline" {
   
   children = [
     azure_compliance.benchmark.cis_v210
+	]
 }

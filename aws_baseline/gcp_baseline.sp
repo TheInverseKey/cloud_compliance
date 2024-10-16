@@ -4,4 +4,5 @@ benchmark "gcp_baseline" {
   
   children = [
     gcp_compliance.benchmark.cis_v300
+	]
 }
