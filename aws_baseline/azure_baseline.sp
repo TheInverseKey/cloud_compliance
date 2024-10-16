@@ -1,4 +1,4 @@
-benchmark "gcp_baseline" {
+benchmark "azure_baseline" {
   title         = "Azure Baseline"
   description   = "Azure Baseline"
   
