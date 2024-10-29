@@ -28,6 +28,7 @@ apt-get update && \
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg  add - && \
     apt-get update -y && \
     apt-get install google-cloud-sdk -y
+    gcloud auth login
 ```
 
 ## Installation 
@@ -42,9 +43,10 @@ cd cloud_compliance
 chmod +x ./install.sh
 ./install.sh
 ```
-4. In the `cloud_compliance` directory run the following command to start the steampipe dashboard `steampipe dashboard`
-5. In a browser on the host machine navigate to the following URL: http://localhost:9194
-6. Select the dashboard you want to run against the cloud environment(You can sort the dashboards by mod).
+4. In the `cloud_compliance` directory run the following command to start the steampipe `steampipe service start`
+5. In the same directory run `powerpipe server`
+6. In a browser on the host machine navigate to the following URL: [http://localhost:9033](http://localhost:9033)
+7. Select the dashboard you want to run against the cloud environment(You can sort the dashboards by mod).
 
 For more information about running your dashboards with different outputs or headless see the following documentation from Steampipe: 
 https://hub.steampipe.io/
