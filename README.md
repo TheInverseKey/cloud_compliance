@@ -22,12 +22,12 @@ sudo ./aws/install
 ### GCP
 
 ```
-apt-get update && \
-    apt-get install -y curl gnupg && \
-    echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
-    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg  add - && \
-    apt-get update -y && \
-    apt-get install google-cloud-sdk -y
+sudo apt-get update && \
+    suod apt-get install -y curl gnupg && \
+    sudo echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
+    sudo curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg  add - && \
+   sudo apt-get update -y && \
+    sudo apt-get install google-cloud-sdk -y
     gcloud auth login
 ```
 
